@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="WeatherProxy" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <endpoint name="endpoint_urn_uuid_a12bfff3-8a92-4d47-bfa9-a9e93df94f27">
+            <address uri="http://api.openweathermap.org"/>
+        </endpoint>
+        <inSequence>
+            <log level="full"/>
+        </inSequence>
+        <outSequence>
+            <log level="full"/>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
