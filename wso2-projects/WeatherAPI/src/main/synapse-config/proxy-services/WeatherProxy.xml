@@ -8,6 +8,7 @@
             <log level="full"/>
         </inSequence>
         <outSequence>
+            <xslt description="XSLT: Convert Temperature" key="conf:myresources/ConvertTemperature.xslt"/>
             <log level="full"/>
             <send/>
         </outSequence>
